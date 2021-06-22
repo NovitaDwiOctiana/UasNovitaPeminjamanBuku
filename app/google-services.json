@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "914216315093",
+    "project_id": "peminjamanbuku-40769",
+    "storage_bucket": "peminjamanbuku-40769.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914216315093:android:6d8ff3c884f3738d1dda5c",
+        "android_client_info": {
+          "package_name": "com.example.peminjamanbuku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914216315093-eps28vfo2552859b2dmqbqo4mplfaj95.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkyCURISqRZLYSM-0w6vE8BgDNUDIHnwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914216315093-eps28vfo2552859b2dmqbqo4mplfaj95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
