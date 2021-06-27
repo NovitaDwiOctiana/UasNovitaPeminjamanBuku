@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PeminjamanBuku</string>
+    <string name="selected_item">SelectedItem</string>
+    <string-array name="Status">
+        <item>Dipinjam</item>
+        <item>Dikembalikan</item>
+    </string-array>
 </resources>

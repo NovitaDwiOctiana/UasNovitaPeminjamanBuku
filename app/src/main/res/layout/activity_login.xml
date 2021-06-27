@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/fui_transparent">
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -29,6 +30,8 @@
         android:id="@+id/login"
         android:layout_marginTop="520dp"
         android:layout_marginBottom="150dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
         android:layout_weight="1"
         android:text="LOGIN"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,16 +46,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/iv_collect"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="270dp"
         android:layout_marginEnd="45dp"
-        android:layout_marginBottom="277dp"
+        android:layout_marginBottom="270dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"
-        tools:ignore="MissingContraints"
-        />
+        app:srcCompat="@drawable/save"
+        tools:ignore="MissingContraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
