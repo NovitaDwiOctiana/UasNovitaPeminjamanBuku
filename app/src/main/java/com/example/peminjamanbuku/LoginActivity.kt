@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private var auth:FirebaseAuth? = null
     private val RC_SIGN_IN = 1
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -36,7 +37,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         if (requestCode == RC_SIGN_IN) {
             val response = IdpResponse.fromResultIntent(data)
 
-            if(resultCode== Activity.RESULT_OK) {
+            if(resultCode == Activity.RESULT_OK) {
                 val user = FirebaseAuth.getInstance().currentUser
                 Toast.makeText(this, "Login Berhasil", Toast.LENGTH_SHORT).show()
                 intent = Intent(applicationContext, MainActivity::class.java)
@@ -54,8 +55,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             AuthUI.IdpConfig.PhoneBuilder().build(),
             AuthUI.IdpConfig.GoogleBuilder().build())
 
-        startActivityForResult(
-            AuthUI.getInstance()
+        startActivityForResult(AuthUI.getInstance()
                 .createSignInIntentBuilder()
                 .setAvailableProviders(providers)
                 .build(), RC_SIGN_IN)

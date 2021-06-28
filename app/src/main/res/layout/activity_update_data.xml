@@ -83,14 +83,15 @@
 
     <TextView
         android:text="Status"
-        android:layout_width="wrap_content"
+        android:id="@+id/new_sts"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="16dp" />
-    <EditText
-        android:id="@+id/new_sts"
+    <Spinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerSt"/>
 <Button
     android:id="@+id/update"
     android:layout_width="match_parent"

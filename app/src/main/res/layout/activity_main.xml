@@ -72,7 +72,7 @@
             android:id="@+id/tgl_pjm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="datetime"/>
+            android:inputType="date"/>
 
         <TextView
             android:text="Tanggal Kembali"
@@ -84,10 +84,11 @@
             android:id="@+id/tgl_kmb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="datetime"/>
+            android:inputType="date"/>
 
         <TextView
             android:text="Status"
+            android:id="@+id/sts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"

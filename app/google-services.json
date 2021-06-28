@@ -1,18 +1,27 @@
 {
   "project_info": {
     "project_number": "914216315093",
+    "firebase_url": "https://peminjamanbuku-40769-default-rtdb.firebaseio.com",
     "project_id": "peminjamanbuku-40769",
     "storage_bucket": "peminjamanbuku-40769.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:914216315093:android:6d8ff3c884f3738d1dda5c",
+        "mobilesdk_app_id": "1:914216315093:android:ea7fe36a42bc2d141dda5c",
         "android_client_info": {
           "package_name": "com.example.peminjamanbuku"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "914216315093-m21029gl89qrg1g2ia1obbbflokk1t50.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.peminjamanbuku",
+            "certificate_hash": "12634c26fb2525702b68a779bef8bae898ed143c"
+          }
+        },
         {
           "client_id": "914216315093-eps28vfo2552859b2dmqbqo4mplfaj95.apps.googleusercontent.com",
           "client_type": 3

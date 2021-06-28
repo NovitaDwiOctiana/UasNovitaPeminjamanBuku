@@ -59,16 +59,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
 
-
                 val getReference: DatabaseReference
                 getReference = database.reference
 
-                if (isEmpty(getJudul)|| isEmpty(getNama) || isEmpty(getAlamat) ||
+                if (isEmpty(getJudul) || isEmpty(getNama) || isEmpty(getAlamat) ||
                         isEmpty(getnoHp) || isEmpty(getPinjam) || isEmpty(getKembali) || isEmpty(getStatus)) {
-                    Toast.makeText(
-                        this@MainActivity, "Data tidak boleh ada yang kosong",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    Toast.makeText(this@MainActivity, "Data tidak boleh ada yang kosong",
+                        Toast.LENGTH_SHORT).show()
                 } else {
                     getReference.child("Admin").child(getUserID).child("DataPinjam").push()
                         .setValue(data_pinjam(getNama, getJudul, getAlamat, getnoHp, getPinjam, getKembali, getStatus))
@@ -83,7 +80,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                         }
                 }
             }
-
 
             R.id.logout -> {
                 AuthUI.getInstance()
