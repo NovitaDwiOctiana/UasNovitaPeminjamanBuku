@@ -49,13 +49,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val getUserID = auth!!.currentUser!!.uid
                 val database = FirebaseDatabase.getInstance()
 
-                val getNama:String = nama.getText().toString()
-                val getJudul:String = judul.getText().toString()
-                val getAlamat:String = alamat.getText().toString()
-                val getnoHp:String = no_hp.getText().toString()
-                val getPinjam:String = tgl_pjm.getText().toString()
-                val getKembali:String = tgl_kmb.getText().toString()
-                val getStatus:String = spinnerSt.selectedItem.toString()
+                val getJudul: String = judul.getText().toString()
+                val getNama: String = nama.getText().toString()
+                val getAlamat: String = alamat.getText().toString()
+                val getnoHp: String = no_hp.getText().toString()
+                val getPinjam: String = tgl_pjm.getText().toString()
+                val getKembali: String = tgl_kmb.getText().toString()
+                val getStatus: String = spinnerSt.selectedItem.toString()
 
 
 
@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                         Toast.LENGTH_SHORT).show()
                 } else {
                     getReference.child("Admin").child(getUserID).child("DataPinjam").push()
-                        .setValue(data_pinjam(getNama, getJudul, getAlamat, getnoHp, getPinjam, getKembali, getStatus))
+                        .setValue(data_pinjam(getJudul, getNama, getAlamat, getnoHp, getPinjam, getKembali, getStatus))
                         .addOnCompleteListener(this){
                             judul.setText("")
                             nama.setText("")
@@ -95,8 +95,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                         })
             }
             R.id.show_data -> {
-                startActivity(Intent(this@MainActivity, ListData::class.java))
-
+            startActivity(Intent(this@MainActivity, ListData::class.java))
             }
             }
         }

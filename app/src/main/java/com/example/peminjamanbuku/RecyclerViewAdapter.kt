@@ -69,7 +69,7 @@ RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
                 holder.ListItem.setOnLongClickListener { view ->
                     val action = arrayOf("Update", "Delete")
                     val alert: AlertDialog.Builder = AlertDialog.Builder(view.context)
-                    alert.setItems(action, DialogInterface.OnClickListener { dialog, i ->
+                    alert.setItems(action, DialogInterface.OnClickListener {dialog, i ->
                         when (i) {
                             0 -> {
                                 val bundle = Bundle()
@@ -79,7 +79,7 @@ RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
                                 bundle.putString("dataNoHP", listdata_pinjam[position].noHp)
                                 bundle.putString("dataTglPinjam", listdata_pinjam[position].pinjam)
                                 bundle.putString("dataTglKembali", listdata_pinjam[position].kembali)
-                                bundle.putString("dataStatus", listdata_pinjam[position].kembali)
+                                bundle.putString("dataStatus", listdata_pinjam[position].status)
                                 val intent = Intent(view.context, UpdateData::class.java)
                                 intent.putExtras(bundle)
                                 context.startActivity(intent)

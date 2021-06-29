@@ -5,12 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_margin="5dp"
     android:id="@+id/list_item">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_weight="2.5"
+        android:src="@drawable/book"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginStart="6dp"
         android:layout_weight="1"
         android:orientation="vertical">
         <TextView
@@ -19,49 +23,49 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="12dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="4dp"
             android:textStyle="bold"/>
         <TextView
             android:id="@+id/nama"
             android:text="Nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="4dp"
             android:textSize="10dp"/>
         <TextView
             android:id="@+id/alamat"
             android:text="Alamat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="4dp"
             android:textSize="10dp"/>
         <TextView
             android:id="@+id/no_hp"
             android:text="Nomor HP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="4dp"
             android:textSize="10dp"/>
         <TextView
             android:id="@+id/tgl_pjm"
             android:text="Tanggal Pinjam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="4dp"
             android:textSize="10dp"/>
         <TextView
             android:id="@+id/tgl_kmb"
             android:text="Tanggal Kembali"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="4dp"
             android:textSize="10dp"/>
         <TextView
             android:id="@+id/sts"
             android:text="Status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="4dp"
             android:gravity="right"
             android:textSize="9dp"/>
 

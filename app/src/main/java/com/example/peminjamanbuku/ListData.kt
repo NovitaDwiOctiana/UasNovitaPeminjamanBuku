@@ -82,7 +82,7 @@ class ListData : AppCompatActivity(), RecyclerViewAdapter.dataListener {
     override fun onDeleteData(data: data_pinjam?, position: Int){
         var getUserID: String = auth?.getCurrentUser()?.getUid().toString()
         val getReference = database.getReference()
-        if (getReference !=null) {
+        if (getReference != null) {
             getReference.child("Admin")
                 .child(getUserID)
                 .child("DataPinjam")

@@ -53,7 +53,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/save"
+        app:srcCompat="@drawable/place"
         tools:ignore="MissingContraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
